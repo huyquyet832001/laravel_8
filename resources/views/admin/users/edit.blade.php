@@ -29,8 +29,8 @@
             <div class="form-group col-md-6">
                 <label for="">Role</label>
                 <select name="role" class="form-control" id="">
-                    <option value="0" {{ $data->gender == 0 ? 'selected' : '' }}>User</option>
-                    <option value="1" {{ $data->gender == 1 ? 'selected' : '' }}>Admin</option>
+                    <option value="0" {{ $data->role == 0 ? 'selected' : '' }}>User</option>
+                    <option value="1" {{ $data->role == 1 ? 'selected' : '' }}>Admin</option>
                 </select>
             </div>
         </div>

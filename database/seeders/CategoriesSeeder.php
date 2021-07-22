@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 
 use Faker\Factory as FakerFactory;
 use Illuminate\Support\Facades\DB;
+
 class CategoriesSeeder extends Seeder
 {
     /**
@@ -15,12 +16,12 @@ class CategoriesSeeder extends Seeder
      */
     public function run()
     {
-        $faker=FakerFactory::create();
-        for($i=0; $i<10;$i++){
-            $data=[
-                'name'=>$faker->name,
+        $faker = FakerFactory::create();
+        for ($i = 0; $i < 10; $i++) {
+            $data = [
+                'name' => $faker->name,
             ];
-             DB::table('categories')->insert($data);
+            DB::table('categories')->insert($data);
         }
     }
 }

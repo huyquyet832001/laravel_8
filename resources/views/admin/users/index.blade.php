@@ -44,8 +44,8 @@
                                     <td>{{ $item->name }}</td>
                                     <td>{{ $item->email }}</td>
                                     <td>{{ $item->address }}</td>
-                                    <td>{{ $item->gender }}</td>
-                                    <td>{{ $item->role }}</td>
+                                    <td>{{ $item->gender == config('common.user.gender.Male') ? 'Nam' : 'Nữ' }}</td>
+                                    <td>{{ $item->role == config('common.user.role.user') ? 'User' : 'Admin' }}</td>
                                     <td>
                                         <a href="{{ route('admin.users.edit', ['id' => $item->id]) }}"
                                             class="btn btn-primary">Update</a>
